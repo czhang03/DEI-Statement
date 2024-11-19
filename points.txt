@@ -1,0 +1,4 @@
+lack of prior experiences (level playing field teaching design, understanding v.s. knowledge, abundant resource, relaxing environment, growth mindset, engagement based learning),
+allyship (privilage, training, continue learning), 
+microaggression, discrimination, oppression (speak up as ally, sigplan care, free/low-cost/accessible textbook),
+Long term effort (advocating for responsible/private/free software/standard/textbook/science, class on problem in computing, reject non-action in computing)

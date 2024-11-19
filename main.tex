@@ -1,0 +1,119 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\usepackage[scheme=plain]{ctex}
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[margin=1.5cm]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage{biblatex} %Imports biblatex package
+\addbibresource{refs.bib} %Import the bibliography file
+
+\makeatletter
+\NewDocumentCommand{\mysubsection}{sm}{%
+  \par\addvspace{1ex}%
+  \phantomsection{}% reset the anchor for hyperrefs
+  \addcontentsline{toc}{subsection}{#2}%
+  {\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{0.3\hintscolumnwidth}{0.95ex}}\quad}{\strut\subsectionstyle{#2}}%
+  \par\nobreak\addvspace{.5ex}\@afterheading}% to avoid a pagebreak after the heading
+\makeatother
+
+
+\setlength{\footskip}{149.60005pt}
+\firstname{Cheng} % Your first name
+\familyname{Zhang} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Diversity, Equality, and Inclusion Statement}
+%\address{W. Ethan Eagle}{}
+%\mobile{(302) 584 3464}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{czhang03@bu.edu}                               % optional, remove / comment the line if not wanted
+\homepage{czhang03.github.io}              % optional, remove / comment the line if not wanted
+\social[github]{czhang03}                              % optional, remove / comment the line if not wanted
+\extrainfo{\faFile{}~\href{https://media.githubusercontent.com/media/czhang03/CV/master/CV.pdf}{Curriculum vitae}}
+
+%\homepage{https://czhang03.github.io/}{https://czhang03.github.io/} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+% reset quote width
+\let\originalrecomputecvlengths\recomputecvlengths
+\renewcommand*{\recomputecvlengths}{%
+\originalrecomputecvlengths%
+\setlength{\quotewidth}{0.85\textwidth}}
+\quote{``故天下兼相爱则治， 交相恶则乱'' -- 墨子\\  
+``Thus, love brings harmony to this world, and hate brings chaos.'' -- Mo Zi}
+
+\begin{document}
+
+\makecvtitle
+
+% set spacing
+\setlength\parskip{8px}
+% avoid paraskip on the first paragraph
+\vspace{-\parskip} 
+
+Diversity, equality, and inclusion in computer science are deeply important to me on multiple levels. 
+On a personal level, I care deeply about my students and colleagues, thus I am committed to creating an environment where people around me can feel valued, respected, and supported, free from unfair treatment, harassment, or oppression. 
+As a researcher, I believe that the most innovative and impactful work in computer science emerges from collaborations between individuals with diverse backgrounds, experiences, and perspectives. 
+As an educator, I recognize that transformative learning depends on the formation of meaningful connections between teachers, students, and peers, which can only thrive in an inclusive and welcoming environment. 
+Even from a utilitarian perspective, research has shown that inclusive environments lead to improved learning outcomes and opportunities~\cite{maruyama_DoesDiversityMake_2000}, underscoring the importance of prioritizing DEI in our academic community.
+
+Despite decades of advocacy, the diversity gap within computer science and STEM fields remains a pressing concern~\cite{_AchievementTrapHow_2007,bowen_CriticalAnalysesOutcomes_2020,bego_DiversityInclusionEngineering_2021a,zhang_MoralImplicationsBeing_2024,miller_TypicalPhysicsPhD_2019}.
+To address these issues, I have integrated several evidence-based measures to help marginalized students in my class.
+Besides short-term solutions, I believe that many changes will also require sustained education, advocacy, and systemic efforts; as research has shown that the roots of inequality can be deeply ingrained, often operating at a subconscious level or embedded within the academic process itself~\cite{miller_TypicalPhysicsPhD_2019,secules_ZoomingOutStruggling_2018,moss-racusin_ScienceFacultysSubtle_2012,nosek_ImplicitSocialCognitions_2011}. 
+In the following paragraphs, I will outline specific proposals from short-term teaching strategies to long-term advocacy.
+
+One of the factors contributing to the under-performance of underprivileged students is their self-perceived readiness~\cite{kargarmoakhar_UnderstandingExperiencesThat_2020a,cassidy_DevelopingComputerUser_2002,vekiri_GenderIssuesTechnology_2008}. 
+To address this issue, I have incorporated several strategies into my teaching approaches. 
+Firstly, I strive to create a level playing field for all students without compromising educational quality. 
+For instance, in the first-year programming course at Boston University, we introduce functional primitives like list comprehension before teaching \verb|for|/\verb|while|-loops.
+This approach allows students without prior programming experience to catch up with their peers who have a background in imperative programming but not functional programming. 
+Additionally, I am committed to developing and using free and accessible textbooks and class material to avoid alienating students from low-income households or with disabilities, and providing multiple avenues for students to seek help, including digital discussion platforms like Piazza, abundant office hours, and individually scheduled office hours.  
+Secondly, research has shown that giving students confidence and opportunities for success can foster a sense of inclusiveness among marginalized students~\cite{kargarmoakhar_UnderstandingExperiencesThat_2020a}. 
+This approach aligns with my teaching philosophy, which emphasizes rapid feedback, quick recovery from mistakes, and multiple paths to success (see my teaching statement for details). 
+Finally, student collaboration is another crucial aspect of promoting classroom diversity~\cite{brinkman_ApplyingCommunalGoal_2016}. 
+To achieve this, I will not only allow group submissions of projects and assignments but also ensure that the final letter grades do not depend on student rankings e.g. never lower grades with curving, thereby encouraging students to collaborate and share learning resources rather than competing with each other.
+
+Another significant barrier to marginalized groups is the prevalence of hostile work environments and microaggressions~\cite{kim_MicroaggressionsInterruptedExperience_2023,cohoon_SexismToxicWomens_2009,lee_IfYouArent_2020}. 
+Unfortunately, even successful researchers, including my current advisor Professor Alexandra Silva, have experienced microaggressions throughout their academic careers~\cite{may26_PeoplePLAlexandra_2020,_AlexandraSilvaJoins_2021,zhang_MoralImplicationsBeing_2024}. 
+I deeply appreciate their willingness to openly share their uncomfortable experiences, which helps to raise awareness and promote change.
+As a member of the majority and a privileged individual, I recognize that I am in a better position to help mitigate these issues, and use my privilege and voice to drive positive change. 
+To this end, I have taken the Ally Skills Workshop offered by Frame Shift Consulting~\cite{frameshiftconsulting_FocusAllySkills_2022}, which provided me with valuable insights into the types of microaggressions that occur and how allies like myself can effectively intervene. 
+I am committed to maintaining a safe and inclusive learning environment in my classes and lab, where microaggressions are not tolerated. I am also encouraged by initiatives such as SIGPLAN CARE~\cite{_SIGPLANCARES_} and ally skills training sessions~\cite{_POPL2020Ally_} within the broader programming languages community. 
+I am eager to contribute to these efforts whenever possible and support the creation of a more inclusive and supportive academic environment.
+
+To drive long-term changes in the programming languages and STEM communities, I firmly believe that education and advocacy are essential. 
+I was raised in the culture that STEM researchers and students should focus solely on technical achievements. 
+Unfortunately, this disengagement has persisted in many STEM communities~\cite{cech_CultureDisengagementEngineering_2014a}. 
+However, I strongly disagree with this approach now. 
+As a STEM researcher and educator, my primary goal is to improve human conditions, and technical advancement alone are insufficient to address the systemic problems we face.
+In additional to design better technical tools, we need also research, education, and advocacy for diversity in STEM. 
+For examples, we should advocate for more accessible software and learning environments that benefit both low-income populations and individuals with disabilities. 
+We should also push for evidence-based redesign of the academic process to foster an inclusive and equitable environment. 
+I stand by these values in my own work, and would love to facilitate designing a class that explores these topics, which could be offered as a second computer science class to adjacent fields, a writing course for early computer science students, or a topic course for more senior students. 
+Classes like these would provide a valuable opportunity for students to conduct research together, develop their academic writing skills, and engage with the social and ethical implications of their work.
+
+In conclusion, diversity, equality, and inclusion in computer science are deeply important to me, and I recognize that addressing these issues requires ongoing research, learning, and planning. 
+Personally, I am committed to supporting underprivileged students by providing a level playing field, accessible learning materials, and abundant help through online and offline channels. 
+My teaching philosophy also emphasizes confidence-building and engaged learning, which have been shown to improve inclusion. 
+Furthermore, I am dedicated to allyship with marginalized groups in STEM and advocacy for a more equitable process that minimizes discrimination. 
+As the perspective of DEI in computer science continues to evolve, I am committed to ongoing learning and refinement of my teaching, mentoring, and communication skills. 
+Ultimately, my goal is to foster a safe, open, and inclusive environment where all students and colleagues feel valued, respected, and confident, regardless of their backgrounds.
+
+
+
+
+
+
+
+
+\newpage
+\printbibliography %Prints bibliography
+
+
+\end{document}
